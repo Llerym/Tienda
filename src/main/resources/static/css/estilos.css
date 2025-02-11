@@ -1,5 +1,72 @@
 #tituloprincipal{
     text-align: center;
     color: white;
-    background: blue;
+    background: purple;
+}
+
+
+.parrafoRojo{
+    color: red;
+}
+
+
+.parrafoVerde{
+    color: purple;
+}
+
+
+
+/*p, h1, div{
+    background-color: amtiquewhite;
+}*/
+
+
+/*Selectores descendente ---cuando queremos ser mas especificos*/
+
+div p {
+    font-size: 20px;
+}
+
+div p.parrafoVerde{
+    font-size: 50px;
+}
+
+/* a todos los elementos le aplican*/
+/** {
+    text-align: center;
+    color: red;
+}*/
+
+
+/*.ejemploPadding{
+    Padding a los 4 arriba abajo izq y derecha
+    padding: 10px;
+    dos valores arriba y abajo, izquierda derecha
+    padding: 10 px 20px; 
+   arriba - izquierda derecha - abajo    
+    padding: 10px 20px 30px; 
+   arriba -  derecha - abajo - izquierda    
+    padding: 10px 20px 30px 40px; 
+    
+    margin bottom: 10px;
+
+}*/
+
+a{
+    font-size: 20px;
+}
+/*los nombres se ponen en rojo*/
+a:hover {
+    color: red;
+    transition: 1s;
+}
+
+/*Cuando me pongo encima del link se pone blanco con negro cuando le doy click*/
+a:active {
+    color: white;
+    background: black;
+}
+/* se ponen en verde los que ya fueron visitados */
+a:visited {
+    color: green;
 }
