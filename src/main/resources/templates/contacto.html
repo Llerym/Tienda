@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
-    <head  th:replace="layout/plantilla :: head">
-    </head>
+          xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="layout/plantilla :: head">     </head>
     <body>
-        <div>Ejemplo de pagina de contacto</div>
+        <header th:replace ="layout/plantilla :: header"></header>
+        <div><h1>Pagina de contacto</h1></div>
+        <footer th:replace ="layout/plantilla :: footer"></footer>
     </body>
 </html>

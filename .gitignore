@@ -1,10 +1,15 @@
-HELP.md
+# Archivos específicos del proyecto
+!HELP.md
+!pom.xml
+!nbproject/
+!/src/
+
+# Ignorar carpetas generadas por Maven
 target/
-!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+# Spring Tool Suite (STS)
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +18,30 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
-/nbproject/private/
+# NetBeans
+/nbproject/private/         # Excluye configuraciones privadas específicas de usuario
 /nbbuild/
 /dist/
 /nbdist/
-/.nb-gradle/
+.nb-gradle/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+/src/main/resources/firebase/techshop-be358-firebase-adminsdk-fbsvc-218b7d4f66.json
