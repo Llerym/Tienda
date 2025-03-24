@@ -5,6 +5,7 @@
 package com.tienda.controller;
 
 import com.tienda.domain.Categoria;
+import com.tienda.domain.Producto;
 import com.tienda.service.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.tienda.service.ProductoService;
+import java.util.List;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -87,14 +89,27 @@ public class PruebasController {
         return "/pruebas/listado2";
     }
 
-   @PostMapping ("/tarea4") // ruta
-    public String tarea4(
-            @RequestParam("existencias") int existencias,
-            Model model) {    
-        var lista=productoService.tarea4();
-        model.addAttribute("productos", lista); 
-        model.addAttribute("existencias", existencias);
-        return "/pruebas/listado2"; // 
-    }
+//    @PostMapping("/tarea4") // ruta
+//    public String tarea4(
+//            @RequestParam("existencias") int existencias,
+//            Model model) {
+//        var lista = productoService.tarea4();
+//        model.addAttribute("productos", lista);
+//        model.addAttribute("existencias", existencias);
+//        return "/pruebas/listado2"; // 
+//    }
+
+  
+
+   
+
+        @GetMapping("/tarea4")
+        public String tarea4(Model model) {
+            List<Producto> productos = productoService.tarea4();
+            model.addAttribute("productos", productos);
+            model.addAttribute("totalProductos", productos.size());
+            return "/pruebas/listado2"; 
+        }
+
 
 }

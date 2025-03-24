@@ -79,4 +79,6 @@ public class ProductoController {
         model.addAttribute("categorias", listaCategoriasActivas);
         return "/producto/modifica";
     }
+    
+    
 }

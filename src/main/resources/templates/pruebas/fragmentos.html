@@ -154,44 +154,42 @@
                         </div>
                     </form>
                 </div>
+
+                <!-- Tarea 4 
+                <div class="col-md-3">
+
+                    <h2 class="mb-4">Filtrar Productos con Precio Mayor al Promedio</h2>
+
+                    <form action="/pruebas/tarea4" method="get">
+                        <button type="submit" class="btn btn-primary">Buscar Productos</button>
+                    </form>
+
+                </div> -->
+
             </div>
-        </section> 
 
-
-        <section th:fragment="consultas">
-            <div class="row row-cols-3 p-2">
-                
-
-                <div class="card p-2">
-                    <form method="post"
-                          action="/pruebas/tarea4">
-                        <div class="card-header bg-primary text-white text-center">
-                            <h4>Filtrar por precio mayor al promedio </h4>
-                        </div>
-                        <div class="card-body bg-warning">
-                            <div class="form-group mb-3"> 
-                                <label>
-                                    Existencias
-                                </label>
-                                <input class="form-control"
-                                       type="number"
-                                       name="existencias"
-                                       th:value="${existencias}"/> 
+            <div class="row py-2">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <form method="GET" th:action="@{/pruebas/tarea4}">
+                        <div class="card">                            
+                            <div class="card-body">
+                                <h5>Filtrar Precio Mayor al Promedio</h5>
                             </div>
-                            
-                        </div>
-                        <div class="card-footer bg-success text-white text-center">
-                            <button type="submit"
-                                    class="btn btn-primary">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                Filtrar
-                            </button>
+                            <div class="card-footer text-center">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-filter"></i> Filtrar
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
-        </section>
-        
+        </section> 
+
+
+
+
 
     </body>
 </html>
