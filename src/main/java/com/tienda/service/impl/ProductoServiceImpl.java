@@ -78,5 +78,8 @@ public class ProductoServiceImpl implements ProductoService {
     public List<Producto> tarea4() {
         return productoDao.findProductosConPrecioMayorAlPromedio();
     }
+    
+  
+
 
 }

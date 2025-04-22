@@ -21,6 +21,10 @@ public interface ProductoService {
 
     public List<Producto> buscarPorExistencias(int existencias);
 
+    
+    
+    
+   
     public List<Producto> buscarPorExistenciasYPrecio(int existencias, double precio);
 
     // Lista de productos con precio entre ordendados por descripción ConsultaAmpliada
@@ -32,8 +36,10 @@ public interface ProductoService {
     //Lista de productos utilizando consultas con SQL Nativo
     public List<Producto> metodoNativo(double precioInf, double precioSup);
 
-
     public List<Producto> tarea4();
+    
+  
+    
 
 
 
